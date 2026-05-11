@@ -7,6 +7,6 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(Unity)
 
-add_executable(test_pulse test_pulse.c)
-target_link_libraries(test_pulse PRIVATE familib unity)
-add_test(NAME pulse COMMAND test_pulse)
+add_executable(test_apu test_apu.c)
+target_link_libraries(test_apu PRIVATE familib unity)
+add_test(NAME apu COMMAND test_apu)
